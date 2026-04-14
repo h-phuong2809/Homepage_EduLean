@@ -1,13 +1,16 @@
-import userAvatar from "../assets/user.png";
+import userAvatar from "../assets/anhdaidien.png";
+import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
-    { label: "Home", href: "#", active: true },
-    { label: "My Courses", href: "#my", active: false },
-    { label: "Blog", href: "#blog", active: false },
-    { label: "Exercise", href: "#exercise", active: false },
+    { label: "Home", href: "/" },
+    { label: "About Us", href: "/about" },
+    { label: "Product", href: "/product" },
+    { label: "Exercise", href: "#exercise" },
 ];
 
 export default function Header() {
+    const location = useLocation();
+
     return (
         <header className="header">
             <div className="header__inner">
@@ -22,9 +25,13 @@ export default function Header() {
                 {/* Navigation */}
                 <nav className="header__nav">
                     {NAV_LINKS.map((link) => (
-                        <a key={link.label} href={link.href} className="header__nav-link">
+                        <Link 
+                            key={link.label} 
+                            to={link.href} 
+                            className={`header__nav-link ${location.pathname === link.href ? "active" : ""}`}
+                        >
                             {link.label}
-                        </a>
+                        </Link>
                     ))}
                 </nav>
 
