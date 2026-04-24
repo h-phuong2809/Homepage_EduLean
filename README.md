@@ -123,22 +123,6 @@ src/
 
 2. **Triển khai thư mục `dist`** tới nhà cung cấp lưu trữ của bạn (Netlify, Vercel, v.v.)
 
-## 🤝 Đóng Góp
-
-1. Fork kho lưu trữ
-2. Tạo nhánh tính năng (`git checkout -b feature/amazing-feature`)
-3. Commit thay đổi của bạn (`git commit -m 'Thêm tính năng tuyệt vời'`)
-4. Đẩy tới nhánh (`git push origin feature/amazing-feature`)
-5. Mở Pull Request
-
-## 📄 Giấy Phép
-
-Dự án này là riêng tư và độc quyền.
-
-## 📞 Liên Hệ
-
-Để biết thêm thông tin hoặc hỗ trợ, vui lòng liên hệ với nhóm phát triển.
-
 ---
 
 **Xây dựng bằng ❤️ sử dụng React & Vite**

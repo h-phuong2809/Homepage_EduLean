@@ -1,0 +1,44 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.userprefs
+*.user.*
+
+# IDE files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Migrations (optional - usually tracked)
+# Migrations/
+
+# Logs
+logs/
+*.log
+
+# Output
+publish/
+dist/
+build/
+
+# Database files
+*.mdf
+*.ldf
